@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, HomeView, AboutView
 from django.views.generic.edit import CreateView
 from .models import Post
 
@@ -17,3 +17,11 @@ class PostCreateView(CreateView):
     template_name = "posts/new.html"
     model = Post
     fields = ['title', 'subtitle', 'body']
+
+class HomePageView(HomeView):
+    template_name = "posts/home.html"
+    model = Post
+
+class AboutPageView(AboutView):
+    template_name = "posts/about.html"
+    model = Post

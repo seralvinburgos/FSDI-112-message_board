@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %}Posts{% endblock title %}
 
 {% block content %}
+<br>
 <h1>Posts</h1>
 <ul>
     {% for post in post_list %}
