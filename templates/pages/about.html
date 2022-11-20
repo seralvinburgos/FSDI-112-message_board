@@ -1,8 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block title %}About{% endblock title %}
 
 {% block content %}
-<h2>Welcome to Markit Share</h2>
+<br>
+<h2>About Me</h2>
+<p>Hello everyone! My name is Seralvin Burgos. I am coming from an extensive career in emergency medicine during my 21 year career in the U.S. Air Force. I have decided to choose a different path and currently aspiring to become a Software Developer. I have an amazing wife, EJ, and two children, Nela and Aven.</p>
+<br>
+<div class="container-fluid">
+    <div class="row mx-auto">
+        <img class="" id="family" src="{% static 'img/wife.jpg' %}">
+        <br>
+        <img class="" id="family" src="{% static 'img/kids.jpg' %}">
+    </div>
+</div>
 {% endblock content %}
